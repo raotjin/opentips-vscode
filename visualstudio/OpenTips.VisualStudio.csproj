@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework><UseWPF>true</UseWPF><VSSDKBuildToolsAutoSetup>true</VSSDKBuildToolsAutoSetup><GeneratePkgDefFile>true</GeneratePkgDefFile><LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup><ProjectCapability Include="CreateVsixContainer" /><PackageReference Include="Microsoft.VisualStudio.SDK" Version="17.14.40265" ExcludeAssets="runtime" /><PackageReference Include="Microsoft.VSSDK.BuildTools" Version="18.5.38461" /><PackageReference Include="Newtonsoft.Json" Version="13.0.3" /></ItemGroup>
+  <ItemGroup><Reference Include="System.Net.Http" /><Content Include="$(NuGetPackageRoot)newtonsoft.json\13.0.3\lib\net45\Newtonsoft.Json.dll"><Link>Newtonsoft.Json.dll</Link><IncludeInVSIX>true</IncludeInVSIX></Content></ItemGroup><ItemGroup><VSCTCompile Include="Commands.vsct"><ResourceName>Menus.ctmenu</ResourceName></VSCTCompile></ItemGroup>
+</Project>
+
+

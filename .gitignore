@@ -7,3 +7,7 @@ coverage
 .aider*
 chat_history.txt
 .vscode
+
+.venv/
+visualstudio/bin/
+visualstudio/obj/
